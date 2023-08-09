@@ -27,22 +27,22 @@
             >Web<span class="header-logo-span">Studio</span></a
           >
           <ul class="nav-list__menu list">
-            <li class="nav-list__item link">
+            <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link link">Studio</a>
             </li>
-            <li class="nav-list__item link">
+            <li class="nav-list__item">
               <a href="./portfolio.html" class="nav-list__link-main link"
                 >Portfolio</a
               >
             </li>
-            <li class="nav-list__item link">
+            <li class="nav-list__item">
               <a href="" class="nav-list__link link">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <address class="header-adrress">
-          <ul class="list adrress-list">
+          <ul class="adrress-list list">
             <li class="adrress-list__item">
               <a
                 href="mailto:info@devstudio.com"
@@ -57,6 +57,123 @@
             </li>
           </ul>
         </address>
+
+        <!-- Button menu open -->
+
+        <button
+          class="menu-open__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-open__icon"
+            width="32"
+            height="22"
+            stroke="var(--navyblue)"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-close__button js-close-menu">
+            <svg class="menu-close__icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link link">Studio</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link-main link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link link">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mobile-menu__bottom">
+            <address class="mobile-menu__contacts">
+              <ul class="mobile-menu__contacts-list list">
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-phone link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <!-- Mobsle-menu socials -->
+
+            <ul class="mobile-menu__socials-list">
+              <li class="mobile-menu__socials-item list">
+                <a
+                  class="team-list__socials-link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram icon"
+                >
+                  <svg class="team-list__socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item list">
+                <a
+                  class="team-list__socials-link"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter icon"
+                >
+                  <svg class="team-list__socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item list">
+                <a
+                  class="team-list__socials-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook icon"
+                >
+                  <svg class="team-list__socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item list">
+                <a
+                  class="team-list__socials-link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin icon"
+                >
+                  <svg class="team-list__socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -404,5 +521,6 @@
         </div>
       </div>
     </footer>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

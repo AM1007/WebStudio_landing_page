@@ -15,7 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <!-- Custom styles -->
+    <!-- Custom Styles -->
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -27,22 +28,22 @@
             >Web<span class="header-logo-span">Studio</span></a
           >
           <ul class="nav-list__menu list">
-            <li class="nav-list__item link">
+            <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link-main link">Studio</a>
             </li>
-            <li class="nav-list__item link">
+            <li class="nav-list__item">
               <a href="./portfolio.html" class="nav-list__link link"
                 >Portfolio</a
               >
             </li>
-            <li class="nav-list__item link">
+            <li class="nav-list__item">
               <a href="" class="nav-list__link link">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <address class="header-adrress">
-          <ul class="list adrress-list">
+          <ul class="adrress-list list">
             <li class="adrress-list__item">
               <a
                 href="mailto:info@devstudio.com"
@@ -57,24 +58,143 @@
             </li>
           </ul>
         </address>
+
+        <!-- Header Mobile Menu  -->
+
+        <button
+          class="menu-open__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-open__icon"
+            width="32"
+            height="22"
+            stroke="var(--navyblue)"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-close__button js-close-menu">
+            <svg class="menu-close__icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link-main link"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link link">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mobile-menu__bottom">
+            <address class="mobile-menu__contacts">
+              <ul class="mobile-menu__contacts-list list">
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-phone link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <!-- Mobile Menu Socials -->
+
+            <ul class="mobile-menu__socials-list">
+              <li class="mobile-menu__socials-item list">
+                <a
+                  class="team-list__socials-link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram icon"
+                >
+                  <svg class="team-list__socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item list">
+                <a
+                  class="team-list__socials-link"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter icon"
+                >
+                  <svg class="team-list__socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item list">
+                <a
+                  class="team-list__socials-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook icon"
+                >
+                  <svg class="team-list__socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item list">
+                <a
+                  class="team-list__socials-link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin icon"
+                >
+                  <svg class="team-list__socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- Hero Section -->
+      <!-- ===== Hero Section ===== -->
 
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-headline">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Advantages section -->
 
-      <section class="advantages-section">
+      <!-- <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages-list list">
@@ -128,11 +248,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Services Section -->
 
-      <section class="services-section">
+      <!-- <section class="services-section">
         <div class="container">
           <h2 class="section-headline">What are we doing</h2>
           <ul class="services-list list">
@@ -162,11 +282,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Our Team section -->
 
-      <section class="team-section">
+      <!-- <section class="team-section">
         <div class="container">
           <h2 class="section-headline">Our Team</h2>
           <ul class="team-list list">
@@ -502,11 +622,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Customers Section -->
 
-      <section class="customers-section">
+      <!-- <section class="customers-section">
         <div class="container">
           <h2 class="section-headline">Customers</h2>
           <ul class="customers-list list">
@@ -595,10 +715,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="footer-container container">
         <div class="footer-logo__wrap">
           <a href="./index.html" class="footer-logo link"
@@ -687,11 +807,11 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal window -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button-close" type="button" data-modal-close>
           <svg
@@ -793,8 +913,8 @@
           <button class="form__button" type="submit">Send</button>
         </form>
       </div>
-    </div>
-
+    </div> -->
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
