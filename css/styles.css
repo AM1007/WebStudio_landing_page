@@ -155,9 +155,14 @@ body {
   text-transform: capitalize;
 }
 
+@media screen and (min-width: 768px) {
+  .card-headline {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .card-headline {
-    text-align: start;
     margin-bottom: 8px;
 
     font-size: 20px;
@@ -214,8 +219,8 @@ body {
   top: 0;
   left: 0;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 80px 35px 40px 40px;
   background-color: var(--white);
   z-index: 999;
@@ -527,8 +532,7 @@ body {
 
 .hero {
   width: 100%;
-  /* max-width: 1440px; */
-  padding: 188px 0;
+  padding: 112px 0;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -539,6 +543,13 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/01-hero/hero-mobile-1x.jpg");
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+    width: 1440px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -865,6 +876,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .customers-container {
+    max-width: 584px;
+  }
+}
+
 .customers-list {
   display: flex;
   flex-direction: row;
@@ -1051,6 +1068,9 @@ body {
 
 /* Footer form */
 
+.footer-form__wrap {
+}
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-form__wrap {
     margin-top: 72px;
@@ -1075,7 +1095,7 @@ body {
 }
 
 .footer-form__input {
-  width: 398px;
+  width: 288px;
   height: 40px;
   border: 1px solid var(--white);
   background-color: transparent;
@@ -1088,7 +1108,13 @@ body {
   color: var(--white);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 428px) {
+  .footer-form__input {
+    width: 396px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-form__input {
     width: 264px;
   }
